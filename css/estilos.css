@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Varela+Round');
+
+*{
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lobster', cursive;
+}
+ body{
+   margin: 0;
+  font-family: 'Varela Round', sans-serif;
+ }
+
+/* ----------------- Estilos del header ------------------ */
+
+.header {
+  height: 60px;
+}
+
+.header .contenedor {
+  display: flex;
+  /* Para que se ponga uno en cada extremo */
+  justify-content: space-between;
+}
+
+.logo, .icon-menu {
+  margin: 5px;
+}
+
+.icon-menu {
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  background: #FFF9C4;
+  color: #FFF;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 5px;
+  margin-left: auto; /* Para que en Mozilla se corra bien a la derecha */
+}
+
+/* ----------------- Estilos del menu ------------------ */
+
+.nav {
+  position: absolute;
+  top: 60px;
+  left: -100%;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu__link{
+  display: block;
+  padding: 20px;
+  background: #FFF9C4;
+  text-decoration: none;
+  color: #E1BEE7;
+}
+
+/* Para cuando pasa el mouse */
+.menu__link:hover, .select{
+  /* Color del fondo cuando pasa el mouse */
+  background: #E1BEE7;
+  /* Color de la letra cuando el mouse está encima */
+  color: #FFF9C4;
+}
+
+.mostrar{
+  left: 0;
+}
+
+/* ----------------- Estilos del banner ------------------ */
+
+.banner {
+  margin-top: -60px;
+  position: relative;
+  z-index: -1000;
+  margin-bottom: 30px;
+}
+
+.banner .contenedor{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  color: #FFF;
+  text-align: center;
+}
+
+.banner__txt{
+  display: none;
+}
+
+/* ----------------- Estilos de info ------------------ */
+
+.info__columna{
+  background: #E1BEE7;
+  color: #FFF9C4;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+/* ----------------- Estilos de cursos ------------------ */
+
+.section__titulo{
+  text-align: center;
+  font-size: 40px;
+  color: #FFF9C4;
+}
+.cursos__columna{
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.cursos__descripcion{
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #FFF;
+  background: rgba(0, 0, 0, 0.5);
+  width: 60%;
+  height: 100%;
+  padding: 5px;
+}
+
+.cursos__titulo{
+  font-size: 25px;
+  margin: 5px 0;
+}
+
+/* ----------------- Estilos de footers ------------------ */
+
+.footer{
+  background: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer .social [class^="icon-"]{
+  color: #333;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 10px;
+  background: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+}
